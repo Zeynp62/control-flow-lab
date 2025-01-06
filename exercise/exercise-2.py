@@ -6,3 +6,12 @@
 # 2. Print the following message:
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
+
+phrase=""
+while phrase != 'quit':
+    phrase = input("Please enter a word or phrase: ")
+
+    if (phrase== "quit" or phrase=="Quit"):
+        break
+
+    print(f"- What you entered is {len(phrase)} characters long")
